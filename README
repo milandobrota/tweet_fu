@@ -1,0 +1,18 @@
+USAGE:
+
+cp settings_example.yml settings.yml
+
+populate it with your tokens/secrets
+
+tf = TweetFu.new
+
+OR
+
+tf = TweetFu.new(:consumer_key => 'your consumer key',
+		 :consumer_secret => 'your consumer secret',
+		 :access_key => 'your access key',
+		 :access_secret => 'your access secret')
+
+tf will now acts as a Twitter::Base object from twitter gem
+
+http://github.com/jnunemaker/twitter
